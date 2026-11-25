@@ -362,7 +362,7 @@ main { overflow-x: clip; }
 .pick img { width: 100%; height: 100%; object-fit: cover; display: block; }
 .pick b { font: 600 14px/1.1 var(--f-body); white-space: nowrap; }
 .pick[aria-current="true"] { border-color: var(--ink); box-shadow: inset 0 0 0 1px var(--ink); }
-@media (max-width: 700px) { .tabs, .picker { flex-wrap: nowrap; overflow-x: auto; margin-inline: -20px; padding-inline: 20px; scrollbar-width: none; } .tab, .pick { flex: none; } }
+@media (max-width: 700px) { .tabs, .picker { flex-wrap: wrap; } .tab, .pick { flex: none; max-width: 100%; } }
 .pos-row { display: flex; align-items: center; gap: 10px; margin-top: 10px; }
 .pos-row button { width: 40px; height: 40px; border-radius: 50%; border: 1.5px solid var(--line); background: transparent; color: var(--ink); cursor: pointer; font-size: 16px; }
 .pos-row button:hover { border-color: var(--ink); }
