@@ -499,6 +499,14 @@ html.gate-open, html.gate-open body { overflow: hidden; }
 .sw b { font: 700 15px/1.2 var(--f-body); }
 .sw code { font: 500 12px/1.2 var(--f-mono); color: var(--muted); }
 @media (max-width: 760px) { .ney-row { grid-template-columns: minmax(0, 1fr); } }
+#g-jp button { aspect-ratio: 1600 / 985; }
+#g-jp-m { grid-template-columns: minmax(0, 1fr); }
+#g-jp-m button { aspect-ratio: 2 / 3; }
+#caso-jp .ney-row .palette .sw-row { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+.pal-case { margin-top: 24px; }
+.pal-case .sw-row { grid-template-columns: repeat(auto-fit, minmax(120px, 1fr)); }
+.pal-case .sw i { aspect-ratio: 4 / 3; }
+@media (max-width: 480px) { .pal-case .sw-row { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
 </style>
 <header class="top">
   <div class="wrap">
@@ -608,6 +616,10 @@ html.gate-open, html.gate-open body { overflow: hidden; }
         <div class="brief"><div><span class="label">Social media</span><p>Stories para campeonatos como CBLOL, Valorant Champions e Fissure Playground (CS) com odds, jogadores e a linguagem da marca, em formato 1080×1920 para Instagram.</p></div></div>
         <div class="gallery" id="g-esports-v"></div>
       </div>
+      <div class="palette pal-case" aria-label="Paleta de cores">
+        <span class="label">Paleta de cores</span>
+        <div class="sw-row"><div class="sw" style="--c:#022EE2"><i></i><b>Azul royal</b><code>#022EE2</code></div><div class="sw" style="--c:#071A60"><i></i><b>Azul marinho</b><code>#071A60</code></div><div class="sw" style="--c:#21B02F"><i></i><b>Verde</b><code>#21B02F</code></div><div class="sw" style="--c:#A9F10B"><i></i><b>Verde limão</b><code>#A9F10B</code></div><div class="sw" style="--c:#FFFFFF"><i></i><b>Branco</b><code>#FFFFFF</code></div></div>
+      </div>
     </div>
   </article>
 
@@ -629,6 +641,10 @@ html.gate-open, html.gate-open body { overflow: hidden; }
         </div>
         <div class="media vertical"><video src="run/motion.mp4" poster="run/poster.jpg" muted loop playsinline controls preload="metadata" aria-label="Vídeo da identidade visual BSW RUN"></video></div>
         <div class="gallery" id="g-run"></div>
+      </div>
+      <div class="palette pal-case" aria-label="Paleta de cores">
+        <span class="label">Paleta de cores</span>
+        <div class="sw-row"><div class="sw" style="--c:#DEC044"><i></i><b>Amarelo</b><code>#DEC044</code></div><div class="sw" style="--c:#000000"><i></i><b>Preto</b><code>#000000</code></div><div class="sw" style="--c:#FFFFFF"><i></i><b>Branco</b><code>#FFFFFF</code></div></div>
       </div>
     </div>
   </article>
@@ -665,6 +681,33 @@ html.gate-open, html.gate-open body { overflow: hidden; }
     </div>
   </article>
 
+  <article class="case" id="caso-jp">
+    <div class="wrap">
+      <div class="case-head">
+        <div>
+          <div class="client"><span class="label">Cliente · JP Multimarcas</span><span class="label">Loja de moda</span></div>
+          <h2>JP Multimarcas</h2>
+          <p class="label" style="margin-top:12px">ID visual para loja multimarcas</p>
+        </div>
+        <div class="chips"><span>Logo</span><span>ID visual</span><span>Paleta</span><span>Mockups</span></div>
+      </div>
+      <div class="case-body">
+        <div class="brief">
+          <div><span class="label">Desafio</span><p>Criar uma marca para uma loja multimarcas que passasse sofisticação e funcionasse em roupas, embalagens e no digital.</p></div>
+          <div><span class="label">Conceito</span><p>O monograma JP em traço cursivo dentro de um hexágono, com riscos de movimento. O <strong>dourado sobre preto</strong> dá o tom premium, e a versão preta funciona em fundos claros.</p></div>
+          <div><span class="label">Entrega</span><p>Logo nas versões dourada e preta, paleta de cores e aplicações em boné, sacola, moletom, copos, tags, ecobag, cartão de visita e tela.</p></div>
+        </div>
+        <div class="gallery g2" id="g-jp"></div>
+      </div>
+      <div class="ney-row">
+        <div class="palette" aria-label="Paleta de cores">
+          <span class="label">Paleta de cores</span>
+          <div class="sw-row"><div class="sw" style="--c:#FAD370"><i></i><b>Dourado claro</b><code>#FAD370</code></div><div class="sw" style="--c:#C59B40"><i></i><b>Dourado</b><code>#C59B40</code></div><div class="sw" style="--c:#000000"><i></i><b>Preto</b><code>#000000</code></div><div class="sw" style="--c:#FFFFFF"><i></i><b>Branco</b><code>#FFFFFF</code></div></div>
+        </div>
+        <div class="gallery" id="g-jp-m"></div>
+      </div>
+    </div>
+  </article>
   <article class="case" id="caso-loja-cs">
     <div class="wrap">
       <div class="case-head">
@@ -698,6 +741,10 @@ html.gate-open, html.gate-open body { overflow: hidden; }
         <figure><div class="tile"><img src="cs/button.png" alt="Botão girar ativo"></div><figcaption class="label">Botão ativo</figcaption></figure>
         <figure><div class="tile"><img src="cs/button-off.png" alt="Botão girar desativado"></div><figcaption class="label">Botão desativado</figcaption></figure>
       </div>
+      <div class="palette pal-case" aria-label="Paleta de cores">
+        <span class="label">Paleta de cores</span>
+        <div class="sw-row"><div class="sw" style="--c:#0121B4"><i></i><b>Azul royal</b><code>#0121B4</code></div><div class="sw" style="--c:#071A58"><i></i><b>Azul marinho</b><code>#071A58</code></div><div class="sw" style="--c:#9EEE16"><i></i><b>Verde limão</b><code>#9EEE16</code></div><div class="sw" style="--c:#42BB2D"><i></i><b>Verde</b><code>#42BB2D</code></div><div class="sw" style="--c:#FFFFFF"><i></i><b>Branco</b><code>#FFFFFF</code></div></div>
+      </div>
     </div>
   </article>
 
@@ -726,6 +773,10 @@ html.gate-open, html.gate-open body { overflow: hidden; }
           <figure><img src="sg/300x50.png" width="300" height="50" alt="Banner 300×50" loading="lazy"><figcaption class="label">300 × 50</figcaption></figure>
         </div>
       </div>
+      <div class="palette pal-case" aria-label="Paleta de cores">
+        <span class="label">Paleta de cores</span>
+        <div class="sw-row"><div class="sw" style="--c:#0257E2"><i></i><b>Azul BETesporte</b><code>#0257E2</code></div><div class="sw" style="--c:#123076"><i></i><b>Azul marinho</b><code>#123076</code></div><div class="sw" style="--c:#11FC40"><i></i><b>Verde neon</b><code>#11FC40</code></div><div class="sw" style="--c:#FFFFFF"><i></i><b>Branco</b><code>#FFFFFF</code></div></div>
+      </div>
     </div>
   </article>
 
@@ -747,6 +798,10 @@ html.gate-open, html.gate-open body { overflow: hidden; }
       <div class="gallery g2 kvs" id="g-pa-kv"></div>
       <div class="gallery g4 logos sg" id="g-pa"></div>
       <div class="logo-strip"><img src="pa/logo-h.png" alt="Logo horizontal Pagamento Antecipado" loading="lazy"></div>
+      <div class="palette pal-case" aria-label="Paleta de cores">
+        <span class="label">Paleta de cores</span>
+        <div class="sw-row"><div class="sw" style="--c:#0B49D6"><i></i><b>Azul BETesporte</b><code>#0B49D6</code></div><div class="sw" style="--c:#133872"><i></i><b>Azul marinho</b><code>#133872</code></div><div class="sw" style="--c:#08F738"><i></i><b>Verde neon</b><code>#08F738</code></div><div class="sw" style="--c:#FFFFFF"><i></i><b>Branco</b><code>#FFFFFF</code></div></div>
+      </div>
     </div>
   </article>
 
@@ -770,6 +825,10 @@ html.gate-open, html.gate-open body { overflow: hidden; }
         <div class="gallery" id="g-crb-v"></div>
       </div>
       <div class="gallery masonry" id="g-crb"></div>
+      <div class="palette pal-case" aria-label="Paleta de cores">
+        <span class="label">Paleta de cores</span>
+        <div class="sw-row"><div class="sw" style="--c:#ED1D2A"><i></i><b>Vermelho</b><code>#ED1D2A</code></div><div class="sw" style="--c:#A10E15"><i></i><b>Vermelho escuro</b><code>#A10E15</code></div><div class="sw" style="--c:#FFFFFF"><i></i><b>Branco</b><code>#FFFFFF</code></div></div>
+      </div>
     </div>
   </article>
 
@@ -789,6 +848,10 @@ html.gate-open, html.gate-open body { overflow: hidden; }
         <div><span class="label">Entrega</span><p>Stories e post de odds para Série C e Copa do Brasil (Londrina x CSA, CSA x Grêmio, Boavista x CSA), bucket hat e boné com a Casa dos Bonés.</p></div>
       </div>
       <div class="gallery masonry" id="g-csa"></div>
+      <div class="palette pal-case" aria-label="Paleta de cores">
+        <span class="label">Paleta de cores</span>
+        <div class="sw-row"><div class="sw" style="--c:#1B236D"><i></i><b>Azul marinho</b><code>#1B236D</code></div><div class="sw" style="--c:#0F4891"><i></i><b>Azul</b><code>#0F4891</code></div><div class="sw" style="--c:#F2CA00"><i></i><b>Amarelo</b><code>#F2CA00</code></div><div class="sw" style="--c:#FFFFFF"><i></i><b>Branco</b><code>#FFFFFF</code></div></div>
+      </div>
     </div>
   </article>
 
@@ -844,6 +907,10 @@ html.gate-open, html.gate-open body { overflow: hidden; }
         <div class="media"><video src="id-visual/bsw-folia.mp4" poster="id-visual/poster.jpg" muted loop playsinline controls preload="metadata" aria-label="Motion da identidade visual BSW Folia"></video></div>
       </div>
       <div class="gallery g4" id="g-bsw"></div>
+      <div class="palette pal-case" aria-label="Paleta de cores">
+        <span class="label">Paleta de cores</span>
+        <div class="sw-row"><div class="sw" style="--c:#1AE3D2"><i></i><b>Turquesa</b><code>#1AE3D2</code></div><div class="sw" style="--c:#DA10F3"><i></i><b>Magenta</b><code>#DA10F3</code></div><div class="sw" style="--c:#E4D226"><i></i><b>Amarelo</b><code>#E4D226</code></div><div class="sw" style="--c:#17F84B"><i></i><b>Verde</b><code>#17F84B</code></div><div class="sw" style="--c:#120827"><i></i><b>Roxo noite</b><code>#120827</code></div></div>
+      </div>
     </div>
   </article>
 
@@ -996,6 +1063,7 @@ const TOPICS = [
 const WORKS = [
   { t: "BSW RUN", sub: "ID visual para corrida", img: "run/poster.jpg", href: "#caso-run", cats: ["id"], video: true },
   { t: "Ney Day Running", sub: "ID visual para corrida", img: "ney-run/logo.jpg", href: "#caso-ney-run", cats: ["id"] },
+  { t: "JP Multimarcas", sub: "ID visual para loja multimarcas", img: "jp/logo-ouro.jpg", href: "#caso-jp", cats: ["id"] },
   { t: "Loja do CS", sub: "Marca da Loja e da Roleta do CS", img: "cs/loja-banner.jpg", href: "#caso-loja-cs", cats: ["id"] },
   { t: "Substituição Garantida", sub: "Campanha BETesporte com Zico e Vampeta", img: "sg/cover.jpg", href: "#caso-sg", cats: ["id"] },
   { t: "Pagamento Antecipado", sub: "Campanha BETesporte com Zico", img: "pa/kv-1.jpg", href: "#caso-pa", cats: ["id"], pos: "left center" },
@@ -1059,6 +1127,8 @@ const galleries = {
   run: { el: "g-run", cls: "tall", items: [["run/portico.jpg", "Pórtico de largada e chegada"], ["run/backdrop.jpg", "Backdrop de patrocinadores"], ["run/fachada.jpg", "Fachada da loja"]] },
   neyRun: { el: "g-ney-run", cls: "", items: [["ney-run/logo.jpg", "Logo Ney Day Running"], ["ney-run/portico.jpg", "Pórtico de largada e chegada"], ["ney-run/itens.jpg", "Kit do atleta: camisa, garrafa, viseira e meias"]] },
   neyRunS: { el: "g-ney-run-s", cls: "tall", items: [["ney-run/data.jpg", "Story com a data"], ["ney-run/paleta.jpg", "Story da paleta"]] },
+  jp: { el: "g-jp", cls: "", items: [["jp/logo-ouro.jpg", "Logo JP Multimarcas dourado"], ["jp/logo-preto.jpg", "Logo JP Multimarcas preto"]] },
+  jpM: { el: "g-jp-m", cls: "", items: [["jp/mockups.jpg", "Aplicações da marca JP Multimarcas"]] },
   cs: { el: "g-cs", cls: "", items: [["cs/loja-banner.jpg", "Banner Loja do CS"], ["cs/loja-logo.png", "Logo Loja do CS"], ["cs/roleta-logo.png", "Logo Roleta do CS"], ["cs/roleta-banner.jpg", "Banner Roleta do CS"], ["cs/promo.jpg", "Imagem promocional da roleta"], ["cs/wheel.png", "Roleta com prêmios"]] },
   sg: { el: "g-sg", cls: "", items: [["sg/zico-vampeta.png", "Sticker Zico e Vampeta"], ["sg/logo.png", "Logo Substituição Garantida"], ["sg/placa.png", "Sticker da placa de substituição"], ["sg/logo-h.png", "Logo horizontal"]] },
   paKv: { el: "g-pa-kv", cls: "", items: [["pa/kv-1.jpg", "Arte Pagamento Antecipado"], ["pa/kv-2.jpg", "Arte placar 2 a 0"]] },
